@@ -12,14 +12,14 @@ Sistema de IR/NLP **clásico** (sin ML entrenado) que clasifica posts de Reddit 
 Espacio Vectorial (TF-IDF) y similitud coseno, con extracción de información por
 regex/FST y evaluación rigurosa.
 
-> 📖 **Lee `GUIA.md` para la explicación profunda, archivo por archivo.**
-> 📄 **El reporte académico completo está en `reports/Reporte_APIT.docx`.**
+> 📖 **Leer `GUIA.md` para la explicación de uso, archivo por archivo.**
+> 📄 **El reporte completo está en `reports/Reporte_APIT.docx`.**
 
 ## Arquitectura (4 fases)
 1. **VSM / BoW** (`preprocessing.py`, `vsm.py`): TF-IDF desde cero con NumPy.
-2. **Clasificación por coseno** (`classifier.py`): centroides + argmax + umbral→Neutral.
-3. **Extracción** (`extraction.py`): regex + FST para normalizar duración de síntomas.
-4. **Evaluación** (`evaluation.py`): matriz de confusión + P/R/F1 desde cero (énfasis en Recall).
+2. **Clasificación por coseno** (`classifier.py`): centroides mas argmax mas umbral→Neutral.
+3. **Extracción** (`extraction.py`): regex mas FST para normalizar duración de síntomas.
+4. **Evaluación** (`evaluation.py`): matriz de confusión mas P/R/F1 desde cero (énfasis en Recall).
 
 ## Uso rápido
 ```bash
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 # coloca los 4 CSV en data/raw/
 python scripts/02_run_pipeline.py
 ```
-CSV esperados: `Depression.csv`, `Suicadal_tendencies_data.csv`, `Neutral.csv`,
+CSV: `Depression.csv`, `Suicadal_tendencies_data.csv`, `Neutral.csv`,
 `Reddit-Based_Schizophrenia_Detection_Dataset.csv`.
 
 ## Resultados (test 30%, 18 292 docs balanceados)
@@ -43,10 +43,10 @@ CSV esperados: `Depression.csv`, `Suicadal_tendencies_data.csv`, `Neutral.csv`,
 ```
 proyecto_apit/
 ├── README.md / GUIA.md / requirements.txt
-├── data/raw/          <- pon aquí los CSV
+├── data/raw/          
 ├── data/processed/    <- corpus.csv generado
 ├── src/               <- núcleo (config, preprocessing, vsm, classifier, extraction, evaluation)
 ├── scripts/           <- 01_build_corpus, 02_run_pipeline, make_figures, build_notebook
 ├── notebooks/         <- exploracion.ipynb
-└── reports/figuras/   <- PNG para el reporte
+└── reports/figuras/   
 ```
