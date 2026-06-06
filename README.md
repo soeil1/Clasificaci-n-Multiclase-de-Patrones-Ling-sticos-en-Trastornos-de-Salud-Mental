@@ -39,6 +39,10 @@ CSV: `Depression.csv`, `Suicadal_tendencies_data.csv`, `Neutral.csv`,
 | Esquizofrenia | 0.87 | 0.74 | 0.80 |
 | **Macro avg** | **0.79** | **0.79** | **0.79** |
 
+
+# Enlaces DataSet
+https://www.kaggle.com/datasets/umar1103/suicide-sentiment-analysis-dataset
+https://www.kaggle.com/datasets/xavrig/reddit-dataset-rdepression-and-rsuicidewatch
 ## Estructura
 ```
 proyecto_apit/
