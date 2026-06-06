@@ -1,0 +1,1 @@
+Muestra de 200 filas. El corpus completo (18292 docs) se regenera con scripts/01_build_corpus.py
