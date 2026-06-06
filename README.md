@@ -13,7 +13,7 @@ Espacio Vectorial (TF-IDF) y similitud coseno, con extracción de información p
 regex/FST y evaluación rigurosa.
 
 > 📖 **Leer `GUIA.md` para la explicación de uso, archivo por archivo.**
-> 📄 **El reporte completo tambien está en `reports/Reporte_APIT.docx`.**
+> 📄 **El reporte completo tambien está en `reports/TrabajoFinal_DeteccionDeTrastornos.pdf`.**
 
 ## Arquitectura (4 fases)
 1. **VSM / BoW** (`preprocessing.py`, `vsm.py`): TF-IDF desde cero con NumPy.
